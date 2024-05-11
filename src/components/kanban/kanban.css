@@ -1,0 +1,52 @@
+.kanban-board {
+  display: flex;
+}
+
+.kanban-board-item {
+  margin: 0 10px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.item-h6 {
+  margin: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.no-priority {
+  color: #ccc;
+}
+
+.todo,
+.low {
+  color: #6d6060;
+}
+
+.in-progress,
+.high {
+  color: rgb(241, 208, 74);
+}
+
+.backlog,
+.urgent {
+  color: red;
+}
+
+.done,
+.medium {
+  color: blue;
+}
+
+.user-group {
+  display: flex;
+  align-items: center;
+}
+.\[object-object\] {
+  display: none;
+}
+
+.initials-small {
+  width: 20px;
+  height: 20px;
+}

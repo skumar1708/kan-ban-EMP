@@ -1,0 +1,73 @@
+.dropdown {
+  position: absolute;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.dropdown-content {
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 300px;
+  top: 80%;
+  border: 1px solid;
+}
+
+.dropdown-item {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  appearance: none; /* Remove default arrow icon */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  width: 200px;
+  left: 15px;
+  position: relative;
+}
+
+select:hover {
+  border-color: #999;
+}
+
+select:focus {
+  border-color: #333;
+}
+
+.icon-left {
+  margin-right: 5px;
+}
+
+.icon-right {
+  margin-left: 5px;
+}
