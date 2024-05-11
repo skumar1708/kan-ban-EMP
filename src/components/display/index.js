@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCaretDown,
-  faCaretUp,
-  faIconLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import "./display.css";
 
 const Dropdown = ({ onChangeGrouping, onChangeOrdering }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [grouping, setGrouping] = useState(
-    sessionStorage.getItem("groupBy") || ""
+    sessionStorage.getItem("groupBy") || "",
   );
   const [ordering, setOrdering] = useState(
-    sessionStorage.getItem("orderBy") || ""
+    sessionStorage.getItem("orderBy") || "",
   );
 
   const toggleDropdown = () => {
@@ -34,7 +30,6 @@ const Dropdown = ({ onChangeGrouping, onChangeOrdering }) => {
     <div className="disaply-content">
       <div className="dropdown">
         <div className="dropdown-header" onClick={toggleDropdown}>
-          <FontAwesomeIcon icon={faIconLeft} className="icon-left" />
           Display
           {isOpen ? (
             <FontAwesomeIcon icon={faCaretUp} className="icon-right" />
